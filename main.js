@@ -1,12 +1,19 @@
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 const modal = document.getElementById("demoModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalTech = document.getElementById("modalTech");
 const modalVideo = document.getElementById("modalVideo");
 
-function openModal(title, tech, videoSrc) {
+function openModal(title, tech, video) {
   modalTitle.textContent = title;
   modalTech.textContent = tech;
-  modalVideo.src = videoSrc;
+  modalVideo.src = video;
   modal.classList.add("active");
 }
 
@@ -16,21 +23,6 @@ function closeModal() {
   modalVideo.src = "";
 }
 
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) {
-    closeModal();
-  }
-});
-const toggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-toggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Cerrar al hacer click en un link
-document.querySelectorAll(".nav-links a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
-  });
+modal.addEventListener("click", e => {
+  if (e.target === modal) closeModal();
 });
