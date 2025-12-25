@@ -149,26 +149,48 @@
 
 </main>
 
-<!-- FOOTER / CONTACT -->
-<footer class="footer" id="contact">
+<!-- FOOTER / CONTACT --><footer class="footer" id="contact">
   <h2>Contacto</h2>
   <p>¿Charlamos?</p>
+
+  <form action="https://formspree.io/f/xvzopanv" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit" class="btn primary">Enviar mensaje</button>
+  </form>
+
+  <p>
+    O escribime directamente a:
+    <a href="mailto:ignacio.piquet.scoffield@gmail.com">
+      ignacio.piquet.scoffield@gmail.com
+    </a>
+  </p>
+
   <ul>
-    <li>Email: ignacio.piquet.scoffield@gmail.com</li>
-    <li>GitHub: <a href="https://github.com/piquetpachu" target="_blank">github.com/piquetpachu</a></li>
+    <li>GitHub:
+      <a href="https://github.com/piquetpachu" target="_blank">
+        github.com/piquetpachu
+      </a>
+    </li>
     <li>LinkedIn:
       <a href="https://www.linkedin.com/in/luis-ignacio-piquet-scoffield-210aa034a/" target="_blank">
         linkedin.com/in/luis-ignacio-piquet-scoffield
       </a>
     </li>
     <li>Instagram:
-      <a href="https://www.instagram.com/piquetnacho?igsh=MWhpMmxscm9oeGw3NQ==" target="_blank">
-        https://www.instagram.com/piquetnacho
+      <a href="https://www.instagram.com/piquetnacho" target="_blank">
+        instagram.com/piquetnacho
       </a>
     </li>
   </ul>
+
   <p class="copyright">© 2025 Nacho Piquet</p>
 </footer>
+
 
 <!-- MODAL -->
 <div id="demoModal" class="modal">

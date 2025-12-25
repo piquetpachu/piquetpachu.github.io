@@ -26,3 +26,26 @@ function closeModal() {
 modal.addEventListener("click", e => {
   if (e.target === modal) closeModal();
 });
+
+//Formulario
+
+  const form = document.querySelector(".contact-form");
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if (response.ok) {
+      alert("Mensaje enviado correctamente 👍");
+      form.reset();
+    } else {
+      alert("Hubo un error, intentá de nuevo");
+    }
+  });
