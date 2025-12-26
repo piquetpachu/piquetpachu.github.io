@@ -420,3 +420,47 @@ body {
   margin-top: 0.5rem;
   align-self: center;
 }
+/* =======================
+   DIRECT CONTACT LINKS
+======================= */
+.contact-direct {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact-direct p {
+  color: #94a3b8;
+  margin-bottom: 0.3rem;
+}
+
+.contact-email {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.contact-email:hover {
+  text-decoration: underline;
+}
+
+.contact-whatsapp {
+  margin-top: 0.6rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+}
+
+.contact-whatsapp:hover {
+  background: #22c55e;
+  color: #020617;
+}
+  
